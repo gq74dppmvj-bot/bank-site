@@ -1,9 +1,19 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="site">
       <nav className="nav">
         <div className="brand">
-          <img src="/BANK-monogram.png" alt="BANK monogram" className="brandLogo brandLogoHeader" />
+          <Image
+            src="/BANK-monogram.png"
+            alt="BANK monogram"
+            width={120}
+            height={180}
+            className="brandLogo brandLogoHeader"
+            priority
+          />
           <div>
             <strong>BANK</strong>
             <small>BANKHEAD & NOBLE KINSHIP</small>
@@ -13,6 +23,7 @@ export default function Home() {
         <div className="navLinks">
           <a href="#stewardship">Stewardship</a>
           <a href="#services">Private Services</a>
+          <Link href="/recycling-program">Recycling Program</Link>
           <a href="#contact" className="navButton">
             Private Inquiry
           </a>
@@ -122,14 +133,23 @@ export default function Home() {
 
       <footer>
         <div className="brand">
-          <img src="/Bank-logo.png" alt="BANK monogram" className="brandLogo" />
+          <Image
+            src="/Bank-logo.png"
+            alt="BANK monogram"
+            width={54}
+            height={36}
+            className="brandLogo"
+          />
           <div>
             <strong>BANK</strong>
             <small>BANKHEAD & NOBLE KINSHIP</small>
           </div>
         </div>
 
-        <p>Private stewardship. Quietly executed.</p>
+        <div className="footerDetails">
+          <Link href="/recycling-program">Recycling Program</Link>
+          <p>Private stewardship. Quietly executed.</p>
+        </div>
       </footer>
     </main>
   );
