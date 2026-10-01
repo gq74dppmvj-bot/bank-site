@@ -69,7 +69,6 @@ export default function InquiryForm({ defaultTopic }: { defaultTopic: string }) 
             <option>Private Mobility</option>
             <option>Family Stewardship</option>
             <option>Special Situations</option>
-            <option>Recycling Program</option>
             <option>Other</option>
           </select>
         </label>

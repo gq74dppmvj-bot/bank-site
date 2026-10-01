@@ -20,7 +20,6 @@ export default async function InquiryPage({
     "Private Mobility",
     "Family Stewardship",
     "Special Situations",
-    "Recycling Program",
     "Other",
   ];
   const defaultTopic = allowed.includes(topic ?? "") ? (topic as string) : "Family Stewardship";
@@ -59,6 +58,9 @@ export default async function InquiryPage({
           have in mind. Initial conversations are private, personal and without
           obligation, and every inquiry receives a personal reply within one
           business day.
+        </p>
+        <p className="inquiryDirect">
+          Prefer to call? <a href="tel:+12057175299">(205) 717-5299</a>
         </p>
       </section>
 
