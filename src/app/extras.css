@@ -314,3 +314,64 @@ textarea:focus-visible {
 .inquiryDirect a:hover {
   border-bottom-color: var(--accent);
 }
+
+/* Fleet */
+.fleet {
+  padding: 110px 0;
+  border-top: 1px solid var(--line);
+  width: 100%;
+}
+.fleet h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(36px, 4.5vw, 62px);
+  line-height: 1.08;
+  margin: 12px 0 48px;
+}
+.fleet h2 em {
+  color: var(--accent);
+}
+.fleetGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.fleetGrid figure {
+  grid-column: span 2;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.fleetGrid figure.fleetWide {
+  grid-column: span 3;
+}
+.fleetGrid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.fleetGrid figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 900px) {
+  .fleet {
+    padding: 72px 0;
+  }
+  .fleetGrid {
+    grid-template-columns: 1fr;
+  }
+  .fleetGrid figure,
+  .fleetGrid figure.fleetWide {
+    grid-column: span 1;
+  }
+}

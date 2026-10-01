@@ -20,6 +20,14 @@ const faqs = [
   },
 ];
 
+const fleet = [
+  { src: "/fleet/jet.jpg", alt: "Black private jet with a gold BANK monogram on the tail", caption: "Air", wide: true },
+  { src: "/fleet/yacht.jpg", alt: "Black motor yacht with a gold BANK monogram on the hull", caption: "Sea", wide: true },
+  { src: "/fleet/range-rover.jpg", alt: "Black luxury SUV with a gold BANK monogram on the rear quarter", caption: "Ground" },
+  { src: "/fleet/maybach.jpg", alt: "Black executive sedan with a gold BANK monogram", caption: "Ground" },
+  { src: "/fleet/phantom.jpg", alt: "Black limousine with a gold BANK monogram", caption: "Ground" },
+];
+
 const steps = [
   {
     n: "01",
@@ -155,6 +163,27 @@ export default function Home() {
             Inquire about special situations →
           </Link>
         </article>
+      </section>
+
+      <section className="fleet" aria-labelledby="fleet-heading">
+        <p className="sectionLabel">THE NETWORK</p>
+        <h2 id="fleet-heading">
+          Ground, air <em>and sea.</em>
+        </h2>
+        <div className="fleetGrid">
+          {fleet.map((f) => (
+            <figure key={f.src} className={f.wide ? "fleetWide" : undefined}>
+              <Image
+                src={f.src}
+                alt={f.alt}
+                width={1600}
+                height={1067}
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+              <figcaption>{f.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="process" aria-labelledby="process-heading">
