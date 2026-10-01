@@ -1,3 +1,9 @@
+/* Hero headline sizing */
+.hero h1 {
+  font-size: clamp(40px, 5.4vw, 82px);
+  line-height: 1.04;
+}
+
 /* Readability */
 .heroCopy,
 .statement p,
@@ -35,10 +41,8 @@ textarea:focus-visible {
 /* How we work */
 .process,
 .faq {
-  padding: 110px 32px;
+  padding: 110px 0;
   border-top: 1px solid var(--line);
-  max-width: 1240px;
-  margin: 0 auto;
   width: 100%;
 }
 .process h2,
@@ -270,7 +274,7 @@ textarea:focus-visible {
 @media (max-width: 900px) {
   .process,
   .faq {
-    padding: 72px 20px;
+    padding: 72px 0;
   }
   .process ol {
     grid-template-columns: 1fr;
