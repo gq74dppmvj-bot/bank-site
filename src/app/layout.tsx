@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://www.bnkatelier.com";
+const siteUrl = "https://bnkatelier.com";
 const description =
   "BANK Atelier provides private family stewardship: coordinated private mobility, household logistics and special situations, handled with discretion and personal accountability.";
 
