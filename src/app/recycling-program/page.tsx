@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Recycling Program",
+  alternates: { canonical: "/recycling-program" },
   description:
     "A discreet, considered approach to the collection and responsible routing of select household materials.",
 };
@@ -33,12 +34,12 @@ export default function RecyclingProgram() {
 
         <div className="navLinks">
           <Link href="/">Return Home</Link>
-          <a
-            href="mailto:concierge@bnkatelier.com?subject=Recycling%20Program%20Inquiry"
+          <Link
+            href="/inquiry?topic=Recycling%20Program"
             className="navButton"
           >
             Arrange Collection
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -162,12 +163,12 @@ export default function RecyclingProgram() {
           description of the items. Photographs are welcome when they help
           establish scope.
         </p>
-        <a
-          href="mailto:concierge@bnkatelier.com?subject=Recycling%20Program%20Inquiry"
+        <Link
+          href="/inquiry?topic=Recycling%20Program"
           className="primaryButton"
         >
           Request a Private Review
-        </a>
+        </Link>
       </section>
 
       <footer>
