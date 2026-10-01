@@ -60,7 +60,6 @@ export default function Home() {
         <div className="navLinks">
           <a href="#stewardship">Stewardship</a>
           <a href="#services">Private Services</a>
-          <Link href="/recycling-program">Recycling Program</Link>
           <Link href="/inquiry" className="navButton">
             Private Inquiry
           </Link>
@@ -207,6 +206,10 @@ export default function Home() {
         <Link href="/inquiry" className="primaryButton">
           Speak With BANK Privately
         </Link>
+
+        <p className="contactDirect">
+          Prefer to call? <a href="tel:+12057175299">(205) 717-5299</a>
+        </p>
       </section>
 
       <footer>
@@ -225,8 +228,8 @@ export default function Home() {
         </div>
 
         <div className="footerDetails">
-          <Link href="/recycling-program">Recycling Program</Link>
           <Link href="/inquiry">Private Inquiry</Link>
+          <a href="tel:+12057175299">(205) 717-5299</a>
           <a href="mailto:concierge@bnkatelier.com">concierge@bnkatelier.com</a>
           <p>Private stewardship. Quietly executed.</p>
         </div>

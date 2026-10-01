@@ -297,3 +297,20 @@ textarea:focus-visible {
     padding-top: 56px;
   }
 }
+
+.contactDirect,
+.inquiryDirect {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 24px;
+}
+.contactDirect a,
+.inquiryDirect a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.contactDirect a:hover,
+.inquiryDirect a:hover {
+  border-bottom-color: var(--accent);
+}

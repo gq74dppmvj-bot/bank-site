@@ -54,11 +54,13 @@ const organizationJsonLd = {
   logo: `${siteUrl}/BANK-monogram.png`,
   description,
   email: "concierge@bnkatelier.com",
+  telephone: "+1-205-717-5299",
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer service",
       email: "concierge@bnkatelier.com",
+      telephone: "+1-205-717-5299",
       availableLanguage: "English",
     },
   ],
