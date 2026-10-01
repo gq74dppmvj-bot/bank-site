@@ -375,3 +375,19 @@ textarea:focus-visible {
     grid-column: span 1;
   }
 }
+
+/* Align added sections with the page gutter */
+.process,
+.faq,
+.fleet {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (max-width: 900px) {
+  .process,
+  .faq,
+  .fleet {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
